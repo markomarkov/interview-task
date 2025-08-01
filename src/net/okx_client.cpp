@@ -14,7 +14,7 @@
 
 OKXClient::OKXClient(const std::string& certificate_file_path) : cert_file_path(certificate_file_path) {}
 
-nlohmann::json OKXClient::fetch_tickers(std::string& error) {
+nlohmann::json OKXClient::fetch_instruments(std::string& error) {
     // FUTURES
     std::string error_futures;
     nlohmann::json futures_data = fetch_json_https("www.okx.com", "443", "/api/v5/public/instruments?instType=FUTURES", error_futures);

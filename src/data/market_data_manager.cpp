@@ -4,7 +4,7 @@ MarketDataManager::MarketDataManager(const std::string& ssl_cert_path)
     : okx(ssl_cert_path) {}
 
 void MarketDataManager::fetchInstruments() {
-    instruments_json = okx.fetch_tickers(instruments_error);
+    instruments_json = okx.fetch_instruments(instruments_error);
 }
 
 void MarketDataManager::fetchOrderBook(const std::string& instId) {

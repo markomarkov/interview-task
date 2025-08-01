@@ -7,7 +7,7 @@
 class OKXClient {
 public:
     OKXClient(const std::string& certificate_file_path);
-    nlohmann::json fetch_tickers(std::string& error);
+    nlohmann::json fetch_instruments(std::string& error);
     nlohmann::json fetch_orderbook(const std::string& instId, std::string& error);
 private:
     std::string cert_file_path;
