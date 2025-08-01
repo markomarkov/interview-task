@@ -17,6 +17,8 @@ to point to your local Boost library installation path.
 
 ### 3. Build the Project
 
+---
+
 ## 🔧TODO:
 - Add multithreading support for improved performance
 - Implement packet validation to ensure API responses match expected format
